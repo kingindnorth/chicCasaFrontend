@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ChicCasa</title>
+</head>
+<body class="bg-zinc-100">
+    <!--navbar-->
+    <nav id="nav" class="fixed top-0 left-0 w-full bg-white z-50">
+        <!--flex container-->
+        <div class="flex justify-between mr-10 items-center p-4">
+            <!--logo-->
+            <h1 class="font-bold text-4xl text-gray-900">ChicCasa</h1>
+            <!--nav items-->
+            <div class="flex space-x-6 p-4">
+                <a class="text-xl text-gray-500 hover:text-gray-800" href="#">Home</a>
+                <a class="text-xl text-gray-500 hover:text-gray-800" href="#">About</a>
+                <a class="text-xl text-gray-500 hover:text-gray-800" href="#">Products</a>
+                <a class="text-xl text-gray-500 hover:text-gray-800" href="#">Contact</a>
+            </div>
+            <!--Get started-->
+            <a href="" class="rounded-full bg-gray-500 p-4 px-6 hover:bg-gray-900 hover:text-white">Get Started</a>
+        </div>
+    </nav>
+
+    <!--Hero Section-->
+    <section id="hero">
+        <!--flex container for hero section-->
+        <div class="flex bg-center">
+            <img src="./img/heroImage.jpeg" alt="">
+        </div>
+    </section>
+
+    <!--feature products-->
+    <section id="featureproducts">
+        <!--flex container-->
+        <div class="flex flex-col space-y-12 items-center mt-24">
+            <!--Heading-->
+            <div class="flex flex-col space-y-6 items-center">
+                <h1 class="font-bold text-4xl text-gray-800">Feature Products</h1>
+                <p class="text-gray-600 text-md">Hurry up to own our best products on the occasion of discounts to
+                    give to friends and relatives</p>
+            </div>
+            <!--feature products-->
+            <div class="flex justify-around px-28">
+                <div class="flex flex-col w-1/4 items-center">
+                    <img class="border-8" src="./img/feature3.jpeg" alt="">
+                    <!--product details-->
+                    <div class="flex flex-col items-center space-y-2 mt-6">
+                        <h3 class="text-red-600 font-bold text-xl">cocomi</h3>
+                        <h2 class="text-gray-500 text-lg">TIMEX EASY READER WHITE</h2>
+                        <h1 class="text-gray-900 text-2xl">$228</h1>
+
+                    </div>
+
+                </div>
+                <div class="flex flex-col w-1/4">
+                    <img  class="border-8" src="./img/feature3.jpeg" alt="">
+                    <!--product details-->
+                    <div class="flex flex-col items-center space-y-2 mt-6">
+                        <h3 class="text-red-600 font-bold text-xl">cocomi</h3>
+                        <h2 class="text-gray-500 text-lg">TIMEX EASY READER WHITE</h2>
+                        <h1 class="text-gray-900 text-2xl">$228</h1>
+
+                    </div>
+                    
+                </div>
+                <div class="flex flex-col w-1/4 max-h-full">
+                    <img  class="border-8" src="./img/feature3.jpeg" alt="">
+                    <!--product details-->
+                    <div class="flex flex-col items-center space-y-2 mt-6">
+                        <h3 class="text-red-600 font-bold text-xl">cocomi</h3>
+                        <h2 class="text-gray-500 text-lg">TIMEX EASY READER WHITE</h2>
+                        <h1 class="text-gray-900 text-2xl">$228</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--About us-->
+    <section id="aboutus">
+        <div class="flex space-x-20 items-center mt-24">
+            <!--image-->
+            <img src="./img/heroImage.jpeg" alt="" class="w-1/2 h-auto mx-16">
+            <div class="flex flex-col space-y-2 items-center mx-16 w-1/2">
+                <h1 class="text-5xl font-bold text-gray-800 py-4">About Us</h1>
+                <!--text-->
+                <p class="text-gray-400 text-center py-4 px-6">Welcome to chicCasa, where style meets convenience in the world of online fashion. At chicCasa, we strive to redefine the way you experience shopping for clothing, offering a curated selection of trendy and timeless pieces right at your fingertips. Our online platform is designed to provide you with an effortless shopping experience, whether you're browsing for the latest runway-inspired looks or seeking versatile wardrobe staples. From chic dresses to cozy knitwear, from sophisticated blazers to casual denim, we've got something for every occasion and every style preference. At chicCasa, we prioritize quality, affordability, and customer satisfaction above all else. With secure payment options and swift delivery services, we ensure that your shopping journey with us is seamless from start to finish. Explore our collections, embrace your unique style, and elevate your wardrobe with chicCasa – because fashion is more than just clothing, it's an expression of self-confidence and individuality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--contact page-->
+    <section id="contact">
+        <!--form -->
+        <div class="max-w-full mx-auto mt-24 p-6">
+            <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                        placeholder="Your Name" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                        placeholder="Your Email" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                    <textarea id="message" name="message"
+                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                        placeholder="Your Message" rows="4" required></textarea>
+                </div>
+                <div class="mb-4">
+                    <button type="submit"
+                        class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="bg-gray-900 text-white py-6 mt-24">
+        <div class="container mx-auto flex flex-col items-center justify-center">
+            <p class="mb-2">&copy; 2024 All rights reserved</p>
+            <p class="mb-2">Phone Number: +918962070311</p>
+            <p class="mb-4">Address: Plot no.2 VIP Nagar, Risali Bhilai</p>
+            <p>Designed by <a href="#" class="text-blue-500 hover:underline">@prajjawal tiwari</a></p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
